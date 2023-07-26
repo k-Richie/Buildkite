@@ -7,7 +7,7 @@ Type: AWS::Lambda::Function
     Properties:
       FunctionName: MySimpleLambdaFunction
  Runtime: python3.8
-      Handler: index.lambda_handler # Replace "index" with the name of your Python file (without the ".py" extension) and "lambda_handler" with the name of the Lambda handler function.
+ Handler: index.lambda_handler # Replace "index" with the name of your Python file (without the ".py" extension) and "lambda_handler" with the name of the Lambda handler function.
       Role: !GetAtt LambdaExecutionRole.Arn
       Environment:
         Variables:
