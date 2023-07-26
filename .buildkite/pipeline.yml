@@ -1,0 +1,6 @@
+steps:
+  - label: ":rocket: YAML Formatting Check"
+    command: script/yaml_format_check.sh
+    agents:
+      queue: default
+    branches: "*"
